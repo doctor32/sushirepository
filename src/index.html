@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body class="main__body">
+
+
+    <header>
+        <div class="container">
+            <div class="header__body">
+                <a href="" class="logo__link">
+                    <img src="img/logo.svg" alt="" class="logo__img">
+                </a>
+                <button class="card__btn btn__login">Реєстрація</button>
+
+                <div class="hello__user">
+                    <div class="hello__user-img--body">
+                        <img class="hello__user-img" src="img/avatar2.jpg" alt="">
+                    </div>
+                    <div class="hello__user-text">
+                        Привет, <span data-user-name >Андрей</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="section__sorting">
+        <div class="container">
+
+            
+            <div class="sorting">
+                <p class="sorting__title">Показать:</p>
+                <div id="show-cards" data-show="all" class="sorting__li">
+                    Все
+                </div>
+                <div id = "show-cards" data-show="rolls" class="sorting__li">
+                    Роллы
+                </div>
+                <div id="show-cards" data-show="sets" class="sorting__li">
+                    Сеты
+                </div>
+            </div>
+
+
+            <div class="sorting">
+                <p class="sorting__title">Сортировать по:</p>
+                <div data-sorting-price="true" id = "sorting__by-price" class="sorting__li">
+                    По цене
+                    <svg id = "sorting-by-price-icon" class="sorting__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.82367 2.40928C7.36267 1.41261 8.79567 1.42061 9.32367 2.42328L14.5013 12.2573C14.998 13.2006 14.314 14.3339 13.248 14.3339H2.75167C1.67834 14.3339 0.995007 13.1873 1.50567 12.2433L6.82334 2.40928H6.82367Z" fill="#F00D0D"/>
+                    </svg>    
+                </div>
+                <div data-sorting-weight="true"  id="sorting__by-price" class="sorting__li">
+                    По весу
+                    <svg id = "sorting-by-weight-icon" class="sorting__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.82367 2.40928C7.36267 1.41261 8.79567 1.42061 9.32367 2.42328L14.5013 12.2573C14.998 13.2006 14.314 14.3339 13.248 14.3339H2.75167C1.67834 14.3339 0.995007 13.1873 1.50567 12.2433L6.82334 2.40928H6.82367Z" fill="#F00D0D"/>
+                    </svg>    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+                            <div class="cart">
+                                <!-- <div class="cart__body"> -->
+                                <p class="cart__title">Корзина</p>
+                                <div class="cart__clear">Корзина пуста.</div>
+                                <div class="cart__items">
+
+                                    
+
+                                </div>
+                                <p class="cart__delivery">Доставка: <span class="cart__delivery-span green" data-delivery></span> </p>
+                                <p class="cart__total">Всего: <span data-sum>0</span>  ₴  </p>
+                                
+                                <div class="cart__offer none">
+                                    <p class="cart__offer-title">Ваш номер:</p>
+                                    <input class="cart__offer-input" type="tel" placeholder="+380932221122">
+                                    <button class="cart__offer-btn">Заказать</button>
+                                </div>
+                                <!-- </div> -->
+                            </div>
+
+
+
+
+
+    <div class="container">
+        <div class="cards">
+
+        </div>
+    </div>
+
+
+
+    @@include('./html/_registration_modal.html')
+
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>
