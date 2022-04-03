@@ -32,7 +32,7 @@ body.hidden {
     width: 740px;
     gap: 30px;
     flex-wrap: wrap;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 .card {
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
@@ -371,4 +371,28 @@ body.hidden {
 .card__weight-body {
     display: flex;
     gap: 4px;
+}
+
+//Пагинация
+.section__pages {
+    padding-bottom: 200px;
+}
+.pages {
+    display: flex;
+    gap: 10px;
+}
+.page {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgb(61, 61, 61);
+    padding: 10px;
+    &:hover {
+        color:#c81d1d;
+        border: #c81d1d 2px solid;
+    }
+}
+.page.active{
+    background-color:#c81d1d;
+    color: white;
+    border: #c81d1d 2px solid;
 }
